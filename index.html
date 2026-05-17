@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milky Way Atlas | Home</title>
+  <!-- Preconnect used to improve loading speed for external assets -->
+  <link rel="preconnect" href="https://upload.wikimedia.org">
+  <link rel="preconnect" href="https://www.youtube.com">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Site header with branding and navigation -->
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Milky Way Atlas home">
+      Milky Way Atlas
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation">Menu</button>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="planets.html">All Planets</a>
+      <a href="pages/earth.html">Earth</a>
+      <a href="pages/mars.html">Mars</a>
+      <a href="pages/saturn.html">Saturn</a>
+      <a href="pages/jupiter.html">Jupiter</a>
+      <a href="pages/venus.html">Venus</a>
+      <a href="pages/mercury.html">Mercury</a>
+      <a href="pages/uranus.html">Uranus</a>
+      <a href="pages/neptune.html">Neptune</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero section introducing the site and primary call-to-action -->
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Bristol Planetarium Educational Hub</p>
+        <h1>Explore the Milky Way</h1>
+        <p>
+          Welcome to our interactive guide to the eight planets of our Solar System.
+          Discover fascinating facts about each planet, explore their unique characteristics,
+          and learn why our Solar System is such an extraordinary place within the Milky Way galaxy.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="planets.html">Explore Planets</a>
+          <a class="button ghost" href="#video">Watch the Tour</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature section showing site content and benefits -->
+    <section class="section split">
+      <div class="section-copy reveal">
+        <p class="eyebrow">What is inside?</p>
+        <h2>Pages included in the project</h2>
+        <p>
+          This site includes a landing page, a full planet gallery, and dedicated
+          pages for Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.
+        </p>
+      </div>
+      <div class="feature-grid reveal">
+        <article>
+          <strong>Explore the Solar System</strong>
+          <span>Discover fascinating information about the planets while learning how everything in the Solar System moves together through space.</span>
+        </article>
+        <article>
+          <strong>Rich Visual Content</strong>
+          <span>Stunning planet photos, engaging videos, and interactive graphics bring the Solar System to life.</span>
+        </article>
+        <article>
+          <strong>Educational Facts</strong>
+          <span>Learn about planetary characteristics, exploration missions, moons, and orbital distances in an easy-to-understand format.</span>
+        </article>
+        <article>
+          <strong>Engaging Learning</strong>
+          <span>We believe science is for everyone. Our content makes complex topics fun and understandable for all learners.</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- Video section that has a featured YouTube tour -->
+    <section class="section media-band" id="video">
+      <div class="section-copy reveal">
+        <p class="eyebrow">Featured video</p>
+        <h2>Intro video</h2>
+      </div>
+      <div class="video-shell reveal">
+        <iframe
+          src="https://www.youtube.com/embed/libKVRa01L8"
+          title="NASA Solar System 101"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer with site branding and mission statement -->
+  <footer class="site-footer">
+    <p>Bristol Planetarium Educational Hub - Inspiring curiosity about our Solar System and the Milky Way galaxy.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milky Way Atlas | All Planets</title>
+  <!-- Preconnect used to improve loading speed for external assets -->
+  <link rel="preconnect" href="https://upload.wikimedia.org">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Site header with branding and navigation -->
+  <header class="site-header">
+    <a class="brand" href="index.html">Milky Way Atlas</a>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation">Menu</button>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="planets.html" class="active">All Planets</a>
+      <a href="pages/earth.html">Earth</a>
+      <a href="pages/mars.html">Mars</a>
+      <a href="pages/saturn.html">Saturn</a>
+      <a href="pages/jupiter.html">Jupiter</a>
+      <a href="pages/venus.html">Venus</a>
+      <a href="pages/mercury.html">Mercury</a>
+      <a href="pages/uranus.html">Uranus</a>
+      <a href="pages/neptune.html">Neptune</a>
+    </nav>
+  </header>
+
+  <!-- Main content container for page sections -->
+  <main id="main-content">
+    <!-- Page hero section introducing the planet directory -->
+    <section class="page-hero compact reveal">
+      <p class="eyebrow">Planet directory</p>
+      <h1>Discover the Planets</h1>
+      <p>Explore the eight planets of our Solar System. Browse by planet type and learn fascinating facts about each world orbiting our Sun.</p>
+    </section>
+
+    <!-- Filter controls for selecting planet categories -->
+    <section class="planet-filter reveal" aria-label="Planet filters">
+      <button class="chip active" type="button" data-filter="all">All</button>
+      <button class="chip" type="button" data-filter="rocky">Rocky</button>
+      <button class="chip" type="button" data-filter="gas">Gas Giants</button>
+      <button class="chip" type="button" data-filter="ice">Ice Giants</button>
+    </section>
+
+    <!-- Planet cards -->
+    <section class="planet-grid" id="planetGrid" aria-live="polite">
+      <article class="planet-card reveal" data-type="rocky" style="--glow:#f0c36a">
+        <a href="pages/mercury.html">
+          <div class="planet-photo">
+            <img src="images/Mercury_in_true_color.jpg" alt="Mercury planet image" loading="lazy">
+          </div>
+          <div class="planet-card-body">
+            <p class="planet-type">rocky planet</p>
+            <h2>Mercury</h2>
+            <p>The smallest and fastest planet, closest to our Sun in the Solar System.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="planet-card reveal" data-type="rocky" style="--glow:#ffdf8a">
+        <a href="pages/venus.html">
+          <div class="planet-photo">
+            <img src="images/Venus-real_color.jpg" alt="Venus planet image" loading="lazy">
+          </div>
+          <div class="planet-card-body">
+            <p class="planet-type">rocky planet</p>
+            <h2>Venus</h2>
+            <p>Earth's toxic twin - a scorching world with crushing atmospheric pressure.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="planet-card reveal" data-type="rocky" style="--glow:#76e0ff">
+        <a href="pages/earth.html">
+          <div class="planet-photo">
+            <img src="images/The_Earth_seen_from_Apollo_17.jpg" alt="Earth planet image" loading="lazy">
+          </div>
+          <div class="planet-card-body">
+            <p class="planet-type">rocky planet</p>
+            <h2>Earth</h2>
+            <p>Our precious home - the only known planet to harbour life and support biodiversity.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="planet-card reveal" data-type="rocky" style="--glow:#ff8b5d">
+        <a href="pages/mars.html">
+          <div class="planet-photo">
+            <img src="images/OSIRIS_Mars_true_color.jpg" alt="Mars planet image" loading="lazy">
+          </div>
+          <div class="planet-card-body">
+            <p class="planet-type">rocky planet</p>
+            <h2>Mars</h2>
+            <p>The Red Planet - a world of ancient wonders and the target of future human exploration.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="planet-card reveal" data-type="gas" style="--glow:#ffd3a3">
+        <a href="pages/jupiter.html">
+          <div class="planet-photo">
+            <img src="images/Jupiter (1).jpg" alt="Jupiter planet image" loading="lazy">
+          </div>
+          <div class="planet-card-body">
+            <p class="planet-type">gas planet</p>
+            <h2>Jupiter</h2>
+            <p>The gas giant - a massive world with spectacular storms and many intriguing moons.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="planet-card reveal" data-type="gas" style="--glow:#fff0ae">
+        <a href="pages/saturn.html">
+          <div class="planet-photo">
+            <img src="images/Saturn_during_Equinox.jpg" alt="Saturn planet image" loading="lazy">
+          </div>
+          <div class="planet-card-body">
+            <p class="planet-type">gas planet</p>
+            <h2>Saturn</h2>
+            <p>The ringed wonder - a gas giant famous for its spectacular system of icy rings.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="planet-card reveal" data-type="ice" style="--glow:#a4ffff">
+        <a href="pages/uranus.html">
+          <div class="planet-photo">
+            <img src="images/Uranus2.jpg" alt="Uranus planet image" loading="lazy">
+          </div>
+          <div class="planet-card-body">
+            <p class="planet-type">ice planet</p>
+            <h2>Uranus</h2>
+            <p>The sideways ice giant - an unusual world tilted at an extreme angle in the outer Solar System.</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="planet-card reveal" data-type="ice" style="--glow:#70a0ff">
+        <a href="pages/neptune.html">
+          <div class="planet-photo">
+            <img src="images/Neptune_Full (1).jpg" alt="Neptune planet image" loading="lazy">
+          </div>
+          <div class="planet-card-body">
+            <p class="planet-type">ice planet</p>
+            <h2>Neptune</h2>
+            <p>The windiest planet - a distant blue ice giant at the edge of our Solar System.</p>
+          </div>
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer with site information and copyright notice -->
+  <footer class="site-footer">
+    <p>Explore the planets in our Solar System - Educational content by Bristol Planetarium.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
+
+
