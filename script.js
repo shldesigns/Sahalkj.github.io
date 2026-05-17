@@ -15,6 +15,7 @@ if (menuButton && navBar) {
   };
 }
 
+
 // Basic fade-in animation
 var revealItems = document.querySelectorAll(".reveal");
 
